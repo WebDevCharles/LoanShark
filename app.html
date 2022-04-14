@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <title>APP NAME: Coding Challenge By Charles Hall</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS! -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- Dev Icons! -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+
+    <!-- Custom CSS! -->
+    <link rel="stylesheet" href="/css/site.css">
+
+    <!-- FavIcon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+
+</head>
+
+<body class="d-flex flex-column h-100">
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-black">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/img/favicon-32x32.png" rel="Personal Mark"
+                    class="d-inline-block align-text-top me-2">APP
+                NAME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/app.html">The App</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/code.html">The Code</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">The Repo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-shrink-0">
+        <div class="container mt-5">
+            <h1>To Do List:</h1>
+            <div class="row align-items-end">
+                <div class="col">
+                    <label for="txtMessage" class="form-label">Item</label>
+                    <input type="text" class="form-control" id="txtMessage" name="txtMessage" placeholder="Enter Item">
+                </div>
+                <div class="col">
+                    <button id="btnSubmit" class="btn btn-primary">Add</button>
+                </div>
+            </div>
+            <div class="messageStyle mt-5">
+                <ol id="results" class="list-group list-group-numbered">
+
+                </ol>
+            </div>
+        </div>
+    </main>
+    <footer class="footer mt-auto py-3 bg-black sticky-footer">
+        <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-lg-3 gy-2">
+                <div class="col d-flex align-items-center order-last order-lg-first">
+                    <span>&copy;2022&nbsp;</span>Charles Hall | webdevcharles@gmail.com
+                </div>
+                <div class="col d-flex align-items-center justify-content-start justify-content-lg-center">
+                    <img src="/img/Blue and Pink Abstract Grid Logo (12).png">
+                </div>
+                <div class="col align-items-center d-flex justify-content-start justify-content-lg-end">
+                    <div class="row">
+                        <div class="col socialIcons">
+                            <a href="https://www.linkedin.com/in/charlesunfiltered"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                        <div class="col socialIcons">
+                            <a href="https://github.com/WebDevCharles"><i class="bi bi-github"></i></a>
+                        </div>
+                        <div class="col socialIcons">
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+
+    <!-- Custom JS -->
+    <script src="/js/site.js"></script>
+    <script>
+        document.getElementById("btnSubmit").addEventListener("click", getMessage);
+    </script>
+
+</body>
+
+</html>
