@@ -79,10 +79,10 @@ function displayData(payments, loanAmount, payment) {
     for (let index = 0; index < payments.length; index++) {
 
         // Clone the template
-        paymentRow = document.importNode(template.content, true);
+        let paymentRow = document.importNode(template.content, true);
 
         // Get the array of columns
-        paymentCols = paymentRow.querySelectorAll("td");
+        let paymentCols = paymentRow.querySelectorAll("td");
 
         paymentCols[0].textContent = payments[index].month;
         paymentCols[1].textContent = payments[index].payment.toFixed(2);
